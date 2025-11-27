@@ -33,22 +33,56 @@ Place it in the same directory as `main.py`.
 ---
 
 ## 3. Running the Project
-All results are written to:
 
-data/
+## Running the Project (From Submitted ZIP)
 
-models/
+If you are running this project from the submitted ZIP file, use the following steps:
 
-results/
+### Google Colab Instructions
 
-Key outputs:
-- `results/portfolio_equity_curves.pdf`  
-- `results/strategy_stats.csv`  
-- `results/*_final_weights.pdf`  
-- `results/*_holdings_area.pdf`  
-- `results/mc_*_summary.csv`
+1. Upload the ZIP file to Colab.
 
-These include equity curves, statistical performance, top holdings evolution, and Monte Carlo risk metrics.
+2. Run the following to upload it programmatically:
+
+```
+from google.colab import files
+uploaded = files.upload()  # Upload PortfolioOptimization-ML.zip
+```
+
+3. Unzip and enter the project directory:
+
+```
+!unzip PortfolioOptimization-ML.zip -d project
+%cd project
+```
+
+4. Install dependencies and run the full pipeline:
+
+```
+!pip install -r requirements.txt
+!python Port_Optimization.py
+```
+
+All results will be written to:
+
+```
+resources/results/
+```
+
+---
+
+## Optional: Running the Latest Version from GitHub Instead of the ZIP
+
+If you'd prefer to run the most up-to-date version of the project:
+
+```
+!git clone https://github.com/KadenRange/PortfolioOptimization-ML.git
+%cd PortfolioOptimization-ML
+
+!pip install -r requirements.txt
+!python Port_Optimization.py
+```
+
 
 ---
 
