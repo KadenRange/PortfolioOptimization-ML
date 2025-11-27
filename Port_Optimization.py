@@ -10,7 +10,6 @@ Original file is located at
 Import all libraries, set basic config (dates, paths, random seed), and define the ETF universe and successor map for old tickers.
 """
 
-!pip install xgboost lightgbm
 
 import numpy as np
 import pandas as pd
