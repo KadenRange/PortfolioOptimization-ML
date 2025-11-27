@@ -28,7 +28,7 @@ Download the point-in-time S&P 500 membership (CSV) from: https://github.com/fja
 
 Required file: s&p500_history.csv
 
-Place it in the same directory as `main.py`.
+Place it in the resources folder.
 
 ---
 
