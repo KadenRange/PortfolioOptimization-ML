@@ -118,9 +118,9 @@ Saved files allow re-running without retraining:
 ```python
 import joblib, pandas as pd
 
-model = joblib.load("models/best_ml_model.joblib")
-prices = pd.read_pickle("data/prices.pkl")
-features = pd.read_pickle("data/features_all.pkl")
+model = joblib.load("resources/models/best_ml_model.joblib")
+prices = pd.read_pickle("resources/data/prices.pkl")
+features = pd.read_pickle("resources/data/features_all.pkl")
 ```
 
 You can call the backtest functions directly with these.
